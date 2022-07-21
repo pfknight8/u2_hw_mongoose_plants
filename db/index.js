@@ -4,7 +4,7 @@ let MONGODB_URI = 'mongodb://127.0.0.1:27017/plantsDatabase'
 
 mongoose
     .connect(MONGODB_URI, {
-      useUnifiedTopology: true, useNewUrlParser: true
+        useUnifiedTopology: true, useNewUrlParser: true
     }).then(() => {
         console.log('Successfully connected to MongoDB.')
     }).catch(e => {
